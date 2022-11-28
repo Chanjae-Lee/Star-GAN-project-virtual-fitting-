@@ -36,6 +36,7 @@ def main(config):
                                  'RaFD', config.mode, config.num_workers)
 
 
+        
     # Solver for training and testing StarGAN.
     solver = Solver(celeba_loader, rafd_loader, config)
 
