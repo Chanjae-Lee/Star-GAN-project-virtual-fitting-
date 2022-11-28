@@ -1,0 +1,44 @@
+[gan 실행] c_dim = 5
+python main.py --mode train --dataset CelebA --image_size 128 --c_dim 5 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results
+
+[gan 실행] c_dim = 4
+python main.py --mode train --dataset CelebA --image_size 128 --c_dim 4 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results
+
+[gan 실행] c_dim 설정 X
+python main.py --mode train --dataset CelebA --image_size 128 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results
+
+[tensorboard]
+C:\Python\workspace>
+tensorboard --logdir=./stargan_celeba/logs/
+[gan test 실행]
+python main.py --mode test --dataset CelebA --image_size 128 --sample_dir stargan_celeba/samples --log_dir stargan_celeba/logs --model_save_dir stargan_celeba/models --result_dir stargan_celeba/results
+
+
+[]
+resume_iters --> 0
+num_iters --> 150000
+num_iters_decay --> 50000
+model_save_step --> 5000
+sample_step --> 5000
+
+
+tensorboard 에서 
+histogram    제거 완료!!!!
+distribution 제거 
+
+hoodies/YT142G009-C11@10.jpg
+tshirt/002837_0.jpg
+hoodies/A0F22S01K-M11@4.jpg
+tshirt/TO722O0NR-A11@7.jpg
+hoodies/MA321J03F-G11@13.jpg
+tshirt/001865_0.jpg
+tshirt/GA322O00S-K11@10.jpg
+longsleeve/002830_0.jpg
+tshirt/YT142D00Y-G11@8.jpg
+hoodies/SU221J0UQ-C12@22.jpg
+tshirt/JA222O1VL-K11@8.jpg
+sleeveless/003223_0.jpg
+tshirt/PY522O04V-A11@10.jpg
+hoodies/WE122S00J-Q11@8.jpg
+tshirt/000999_0.jpg
+tshirt/AD122O0E7-A11@18.jpg
