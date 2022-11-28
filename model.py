@@ -29,6 +29,7 @@ class Generator(nn.Module):
         layers.append(nn.InstanceNorm2d(conv_dim, affine=True, track_running_stats=True))
         layers.append(nn.ReLU(inplace=True))
 
+        
         ## CONV BLOCK
         # Down-sampling layers.
         curr_dim = conv_dim
