@@ -24,6 +24,7 @@ class Solver(object):
         self.celeba_loader = celeba_loader
         self.rafd_loader = rafd_loader
 
+        
         # Model configurations.
         self.c_dim = config.c_dim
         self.c2_dim = config.c2_dim
